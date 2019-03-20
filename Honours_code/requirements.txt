@@ -1,0 +1,5 @@
+Flask 
+azure-cognitiveservices-search-imagesearch  
+pillow 
+cognitive_face
+pymongo

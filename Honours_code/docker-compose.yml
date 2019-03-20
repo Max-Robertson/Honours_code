@@ -1,0 +1,37 @@
+version: '3.3'
+
+services:  
+  # Name our service will be known by
+  db:
+
+    # version of mongo we'll use
+    image: mongo
+
+    # local port mapping to container port.  Remember, this
+    # doesn't have to be 27017, you could make this availble
+    # on port 3000 on our local machine via 3000:27017
+    # if we really wanted to.
+    ports:
+      - 27017:27017
+
+    # using a named volume
+    volumes:
+      - devmongo:/data/db 
+      
+  client: 
+  
+    image: honours-project
+    links:
+        - db 
+    depends_on: 
+        - db
+    ports:
+        - 27017
+    environment:
+        - MONGO_URI=mongodb:27017/mydatabase
+
+
+
+volumes:  
+  devmongo: 
+  
