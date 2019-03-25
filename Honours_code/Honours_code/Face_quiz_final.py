@@ -14,8 +14,9 @@ from azure.cognitiveservices.search.imagesearch.models.image_search_api_enums im
 
 
 
-#topics = ['Famous Computer Scientists', 'Famous Cryptographers', 'Famous tech People', 'famous cryptologists', 'famous computer programmers' , 'top cryptocurrency pioneers']
-topics = ['Famous Computer Scientists']
+topics = ['Famous Computer Scientists', 'Famous Cryptographers', 'Famous tech People', 'famous cryptologists', 
+          'famous computer programmers' , 'top cryptocurrency pioneers']
+
 
 
 subscription_key = "71ad32482bbb4d99a0882c34d8b08d9f"
