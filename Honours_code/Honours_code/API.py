@@ -17,13 +17,13 @@ def get_multiply10(num):
 @app.route('/question/<string:question>', methods=['GET']) 
 def get_question(question):  
     if (question == "fred"):
-        return jsonify({"question":" 'mylk'  is what word put through a caeser cipher ?", "answer": "fred"}) 
+        return jsonify({"question":" 'mylk'  is what word put through a caesar cipher ?", "answer": "fred"}) 
     if (question == "bob"):
-        return jsonify({"question":" 'ivi'   is what word put through a caeser cipher ?", "answer": "bob"}) 
+        return jsonify({"question":" 'ivi'   is what word put through a caesar cipher ?", "answer": "bob"}) 
     if (question == "alice"):
-        return jsonify({"question":" 'hspjl'   is what word put through a caeser cipher ?", "answer": "alice"}) 
+        return jsonify({"question":" 'hspjl'   is what word put through a caesar cipher ?", "answer": "alice"}) 
     if (question == "eve"):
-        return jsonify({"question":" 'lcl'   is what word put through a caeser cipher ?", "answer": "eve"})  
+        return jsonify({"question":" 'lcl'   is what word put through a caesar cipher ?", "answer": "eve"})  
 
 if __name__ == '__main__': 
     app.run(debug=True)
