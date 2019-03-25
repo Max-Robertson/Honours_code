@@ -9,7 +9,7 @@ caeser_questions = {
 question = (random.choice(list(caeser_questions)))
 print(question)
 
-for key, value in caeser_questions.items(): #its data.items() in Python 3.x
+for key, value in caeser_questions.items(): 
     print ("---" + value) 
    
 answer = input("Enter answer here:") 
