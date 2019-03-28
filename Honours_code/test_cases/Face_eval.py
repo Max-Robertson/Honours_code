@@ -490,15 +490,20 @@ for key,value in Low_famous.items():
         
 
         
-print("the very famous category matched " + str(vcorrect) + " out of " + str(len(Very_famous)) + " Pictures with an average confidence rating of " + str(average(vscores)))  
-str(len(vmatched))
-print("a total of " + str(len(vmatched)) + " People were matched out of " + str(len(Very_famous)/3)) 
+print("the very famous category matched " + str(vcorrect) + " out of " + str(len(Very_famous)) + 
+      " Pictures with an average confidence rating of " + str(average(vscores)))  
 
-print("the medium famous category matched " + str(mcorrect) + " out of " + str(len(Medium_famous)) + " Pictures with an average confidence rating of " + str(average(mscores)))  
+print("a total of " + str(len(vmatched)) + " People were matched out of " + str(len(Very_famous)/3))  
 
-print("a total of " + str(len(mmatched)) + " People were matched out of " + str(len(Medium_famous)/3)) 
 
-print("the low famous category matched " + str(lcorrect) + " out of " + str(len(Low_famous)) + " Pictures with an average confidence rating of " + str(average(lscores)))  
+print("the medium famous category matched " + str(mcorrect) + " out of " + str(len(Medium_famous)) + 
+      " Pictures with an average confidence rating of " + str(average(mscores)))  
+
+print("a total of " + str(len(mmatched)) + " People were matched out of " + str(len(Medium_famous)/3))  
+
+
+print("the low famous category matched " + str(lcorrect) + " out of " + str(len(Low_famous)) + 
+      " Pictures with an average confidence rating of " + str(average(lscores)))   
 
 print("a total of " + str(len(lmatched)) + " People were matched out of " + str(len(Low_famous)/3))
             
