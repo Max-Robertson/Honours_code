@@ -23,13 +23,11 @@ subscription_key = "71ad32482bbb4d99a0882c34d8b08d9f"
 search_term = random.choice(topics)   
 
 headers = {
-    # Request headers. Replace the key below with your subscription key.
     'Content-Type': 'application/json',
     'Ocp-Apim-Subscription-Key': '9a899136784940ebadbe150dc9d28b39',
 }
 
 params = urllib.parse.urlencode({
-    # Request parameters. All of them are optional.
     'visualFeatures': 'Categories',
     'details': 'Celebrities',
     'language': 'en',
