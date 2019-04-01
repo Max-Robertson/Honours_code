@@ -33,6 +33,5 @@ browser = webdriver.Chrome(options=options, executable_path=r"C:\Program Files (
 browser.get("https://passwordsgenerator.net/md5-hash-generator/") 
 hashField = browser.find_element_by_id('txt1') 
 hashField.send_keys(person)  
-hashResult = browser.find_element_by_id('txt2').get_attribute("value")  
-#hashField.send_keys(hashResult)  
+hashResult = browser.find_element_by_id('txt2').get_attribute("value")    
 print (person + ' ' + hashResult)
