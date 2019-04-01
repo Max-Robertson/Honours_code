@@ -26,8 +26,6 @@ services:
     environment:
         - MONGO_URI=mongodb:27017/mydatabase
 
-
-
 volumes:  
   devmongo: 
   
